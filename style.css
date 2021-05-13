@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px; 
+    padding: 8px;
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+.split1 {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 84% 16%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.heading {
+    background-color: rgb(241, 160, 67);
+    padding: 8px;
+}
+
+#timer {
+    background-color: white;
+    font-weight: bold;
+    width: 128px;
+    padding: 13px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.main {
+    height: 650px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-color: black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* display: grid;
+    grid-template-columns: 84% 16%; */
+}
+
+.main2 {
+    height: 650px;
+    margin-top: 10px;
+    overflow-x: scroll;
+    z-index: 1;
+    padding: 50px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #aaaaaa;
+    border-color: black;
+}
+
+.container {
+    position: relative;
+}
+
+.start, .stop {
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 6px;
+    cursor: pointer;
+    width: 10%;
+    box-shadow: gray 7px 7px 7px;
+    font-weight: bold;
+}
+
+.start {
+    margin-bottom: 15px;
+    margin-left: 432px;
+}
+
+.stop {
+    display: none;
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+.start:hover, .stop:hover {
+    background: linear-gradient(yellow, rgb(138, 138, 32));
+    transform: translate(5px, 5px);
+}
+
+.start:active, .stop:active {
+    transform: translate(0px, 0px);
+}
+
+#div1 {
+    width: 153px;
+    height: 145px;
+    margin-left: 336px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+}
+
+#div2 {
+    width: 388px;
+    height: 384px;
+    border: 1px solid black;
+    margin-left: 159px;
+}
+
+#div4 {
+    width: 146px;
+    height: 176px;
+    border: 1px solid black;
+    margin-left: 100px;
+}
+
+#div5 {
+    width: 224px;
+    height: 204px;
+    border: 1px solid black;
+    margin-left: 100px;
+}
+
+#div6 {
+    width: 188px;
+    height: 172px;
+    border: 1px solid black;
+    margin-left: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.stand {
+    background-size: 130% 100%;
+    width: 205px;
+    height: 145px; 
+    margin-left: -45px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.funnel {
+    background-size: 100%;
+    width: 450px;
+    height: 338px;
+    margin-top: 39px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.beaker1 {
+    background-size: 100%;
+    width: 279px;
+    height: 216px;
+    margin-top: -41px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.beaker0 {
+    cursor: pointer;
+    background-size: 100%;
+    width: 243px;
+    height: 181px;
+    z-index: 2;
+}
+
+.bag {
+    background-size: 100%;
+    width: 350px;
+    height: 240px;
+    margin-top: -98px;
+    opacity: 0.89;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.beaker2 {
+    position: absolute;
+    left: 700px;
+    top: 228px;
+    background-size: 100%;
+    /* width: 469px;
+    height: 350px; */
+}
+
+.dropper {
+    position: absolute;
+    top: 303px;
+    left: 597px;
+    cursor: pointer;
+    background-size: 100%;
+    /* width: 469px;
+    height: 350px; */
+}
+
+.waterlvl {
+    position: absolute;
+    background-color: skyblue;
+    width: 104px;
+    height: 0px;
+    top: 760px;
+    margin-left: 523px;
+    background-size: 100%;
+}
+
+.display {
+    background-color: yellow;
+    position: absolute;
+    width: 236px;
+    height: 22px;
+    top: 409px;
+    left: 750px;
+    background-size: 100%;
+}
+
+.tube {
+    position: absolute;
+    top: 545px;
+    left: 536px;
+    background-size: 100%;
+}
+
+.container2 {
+    display: none;
+}
+
+.drop {
+    position: absolute;
+    left: 587px;
+    animation: move infinite 1s; 
+    display: none;
+}
+
+.drop1 {
+    z-index: -1;
+}
+
+.drop2 {
+    left: 330px;
+    top: -620px;
+    animation: move2 infinite 1s; 
+}
+
+@keyframes move {
+    from {
+        top: 432px;
+    }
+    to {
+        top: 778px;
+    }
+}
+
+@keyframes move2 {
+    from {
+        top: -485px;
+    }
+    to {
+        top: -400px;
+    }
+}

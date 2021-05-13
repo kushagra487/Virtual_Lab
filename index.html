@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <div class="header">
+    <div class="heading">
+        <h1><u>To Study the Dialysis of Starch solution</u></h1>
+    </div>
+    <hr>
+</div>
+
+    <div class="split1">
+        <div class="main">
+            <div id="div1" ondrop="drops(event)" ondragover="allowDrop(event)"></div>
+            <div id="div2" ondrop="drops2(event)" ondragover="allowDrop2(event)">
+                <div id="div4" ondrop="drops4(event)" ondragover="allowDrop4(event)"></div>
+                <div id="div5" ondrop="drops5(event)" ondragover="allowDrop5(event)">
+                    <div id="div6" ondrop="drops6(event)" ondragover="allowDrop6(event)"></div>
+                </div>
+            </div>
+            <div class="container"> 
+                <img class="drop drop2" src="drop.png">
+            </div>
+
+            <div class="container2" >
+                <img class="dropper" onclick="func()" src="dropper.png">
+                <div class="waterlvl" onclick="func1()" ></div>
+                <div class="counter display"> </div>
+                <img class="tube" src="tube.png">
+                <img class="drop drop1" src="drop.png">
+            </div>
+        </div>
+
+        <div class="main2">
+            <img class="stand" id="drag2" src="stand.png" draggable="true" ondragstart="drag2(event)"><label for="drag2">Stand</label>
+            <img class="funnel" id="drag4" src="funnel.png" draggable="true" ondragstart="drag4(event)"><label for="drag2">funnel</label>
+            <img class="bag" id="drag6" src="bag.png" draggable="true" ondragstart="drag6(event)"><label for="drag2">Parchment Membrane</label>
+            <img class="beaker1" id="drag5" src="beaker.png" draggable="true" ondragstart="drag5(event)"><label for="drag2">Beaker(Containing distilled water)</label>
+            <img class="beaker0" id="drag1" src="beaker0.png" draggable="true" ondragstart="drag(event)"><label for="drag2">Beaker</label>
+    </div>
+</div>
+
+<button class="start" onclick="showTimer()"> Start </button>
+
+<center>
+    <div id="timer">00: 01</div> 
+    <button class="stop" id="hide" onclick="show_hide()" > Proceed Further </button>
+</center>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
